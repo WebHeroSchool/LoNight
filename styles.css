@@ -1,5 +1,4 @@
 .wrapper {
-    font-family: PT Serif;
     margin: 0;
     width: 80%;
     margin: auto;
@@ -33,7 +32,7 @@
 
 .menu__item {
     position: relative;
-    margin-right: 27px;
+    margin-right: 28px;
     color: #000;
     text-decoration: none;
     transition: opacity 0.5s;
@@ -45,11 +44,11 @@
 }
 
 .main__title {
-    padding-top: 68px;
+    padding-top: 69px;
     font-family: pt_serifbold;
     font-weight: 700;
     font-size: 66px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 }
 
 .main__subtitle {
@@ -57,7 +56,7 @@
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 60px;
-    width: 450px;
+    width: 452px;
     height: 52px;
 }
 
@@ -65,7 +64,7 @@
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
-    padding: 18px 26px;
+    padding: 20px 29px;
     color: #fff;
     background: #0056EC;
     text-decoration: none;
@@ -127,18 +126,13 @@
       background: url('img/menu.svg');
       width: 25px;
       height: 17px;
-      margin-top: -5px;
       transition: opacity .5s;
-      margin-right: -20px;
-      margin-top: -16px;
       visibility: visible;
       outline: none;
       opacity: 1;
     }
     .logo {
       background: url('img/log.svg') no-repeat;
-      margin-top: -25px;
-      margin-left: -20px;
     }
     .menu {
       display: none;
@@ -148,40 +142,125 @@
     }
     .main {
       padding: 74% 0 0;
-      background-size: 280px 239px;
+      background-size: contain;
       background-position: top 20px center;
       text-align: center;
     }
     .main__title {
-      width: 267px;
-      height: 96px;
+      display: inline-block;
+      justify-content: center;
+      width: auto;
+      height: auto;
       font-family: pt_serifbold;
       font-size: 30px;
       font-weight: 700;
-      margin-top: 0;
-      margin-left: 10px;
+      margin-bottom: 5px;
+      margin-top: auto;
     }
     .main__subtitle {
-      width: 276px;
-      height: 55px;
+      display: inline-block;
+      justify-content: center;
+      width: auto;
+      height: auto;
       font-family: Roboto;
       font-size: 16px;
       font-weight: 600;
-      margin-top: 54px;
-      margin-left: 4px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
     .main__button {
-      padding: 15px 22px;
+      padding: 14px 22px;
       font-family: Roboto;
       font-size: 14px;
       font-weight: 600;
-      background-position: center;
+      background-size: auto;
     }
     .image {
       display: none;
     }
     .home:hover {
       opacity: 0.5;
+    }
+    .logo, .home {
+      display: inline-block;
+      justify-content: space-between;
+    }
+}
+
+@media (max-width: 320px) {
+    .main {
+      background-size: 220px 190px;
+    }
+    .main__title {
+      width: inherit;
+      height: inherit;
+    }
+    .main__subtitle {
+      width: inherit;
+      height: inherit;
+    }
+    .main__button {
+      padding: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+      background: url('img/menu.svg');
+      width: 25px;
+      height: 17px;
+      transition: opacity .5s;
+      visibility: visible;
+      outline: none;
+      opacity: 1;
+    }
+    .logo {
+      background: url('img/log.svg') no-repeat;
+    }
+    .menu {
+      display: none;
+    }
+    .header {
+      margin-bottom: 28px;
+    }
+    .main {
+      padding: 74% 0 0;
+      background-size: auto;
+      background-position: top 20px center;
+      text-align: center;
+    }
+    .main__title {
+      display: inline-block;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      font-family: pt_serifbold;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .main__subtitle {
+      display: inline-block;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .main__button {
+      padding: 14px 22px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 600;
+      background-size: auto;
+    }
+    .image {
+      display: none;
+    }
+    .home:hover {
+      opacity: 0.5;
+    }
+    .logo, .home {
+      display: inline-block;
+      justify-content: space-between;
     }
 }
